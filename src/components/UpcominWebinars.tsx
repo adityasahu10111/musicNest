@@ -66,7 +66,7 @@ function UpcomingWebinars() {
             items={featuredWebinars.map((webinar) => ({
               title: webinar.title,
               description: webinar.description,
-              link: "/",
+              link: webinar.slug ? `/webinars/${webinar.slug}` : "/", // Use slug for unique link
             }))}
           />
         </div>

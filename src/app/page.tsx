@@ -1,12 +1,12 @@
 //https://github.com/hiteshchoudhary/Music-school-hindi/commits/main/
 
-import Image from "next/image";
-import styles from "./page.module.css";
+
 import HeroSection from "@/components/HeroSection";
 import FeaturedCourses from "@/components/FeaturedCourses";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import MusicSchoolTestimonials from "@/components/TestimonialCards";
 import UpcomingWebinars from "@/components/UpcominWebinars";
+import Instructors from "@/components/Instructors";
 
 export default function Home() {
   return (
@@ -16,7 +16,8 @@ export default function Home() {
      <FeaturedCourses />
      <WhyChooseUs />
      <MusicSchoolTestimonials />
-     <UpcomingWebinars />
+   <UpcomingWebinars/>
+   <Instructors/>
       </main>
   );
 }
